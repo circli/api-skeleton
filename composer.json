@@ -1,0 +1,36 @@
+{
+    "name": "Base site project",
+    "type": "project",
+    "description": "Base site project",
+    "keywords": [],
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Andreas Sundqvist",
+            "email": "andreas@oak-valley.se"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=7.2.0",
+        "circli/installer": "dev-master",
+        "circli/web-core": "dev-master",
+        "monolog/monolog": "^1.23",
+        "circli/event-dispatcher": "^1.0",
+        "middlewares/whoops": "^1.2"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/App/",
+            "Web\\": "src/Web/",
+            "Infrastructure\\": "src/Infrastructure/"
+        }
+    },
+    "scripts": {
+        "dev": "php -S 'localhost:9002' -t public/ public/index.php"
+    }
+}

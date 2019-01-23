@@ -1,0 +1,13 @@
+.idea/
+.DS_Store
+
+### Composer ###
+composer.phar
+vendor/
+
+# don't add your local config changes
+config/local.php
+
+packages/
+extensions/core/
+extensions/web-core/
